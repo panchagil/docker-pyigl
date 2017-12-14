@@ -22,8 +22,10 @@ RUN cd /usr/local/bin \
     && ln -s `which pydoc3` pydoc \
     && ln -s `which python3` python \
     && ln -s `which python3-config` python-config \
-    && ln -fs `which pip3` pip \
-    && pip install --upgrade pip
+    && ln -fs `which pip3` pip
+
+RUN pip install --upgrade pip \
+    && pip install -r requirements.txt
 
 # Install libigl
 RUN git clone --recursive https://github.com/libigl/libigl.git
