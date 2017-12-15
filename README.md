@@ -16,7 +16,9 @@ The VNC Server displays a running Xdummy session."
 
 Quick Start
 --------
-Running `./run_tutorials.sh` will start the image on libigl python folder.
+Running `./run_tutorials.sh` will start the image on libigl python folder. 
+*Note:* If you use docker-machine you need to modify the script. The required line is commendted.
+
 From there run the following to test the first tutorial (no ui)
 ```
 PYTHONPATH=. python tutorials/001_BasicTypes.py
@@ -25,7 +27,6 @@ To run a tutorial with ui, run the following and open `http://localhost:6081/` o
 ```bash
 PYTHONPATH=. python tutorials/102_DrawMesh.py
 ```
-
 The libigl bindings have been installed on the system python, on your scripr you only need to use
 ```python
 import pyigl as igl
