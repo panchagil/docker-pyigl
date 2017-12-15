@@ -16,9 +16,9 @@ The VNC Server displays a running Xdummy session."
 
 Quick Start
 --------
-Running `./run_tutorials.sh` will start the image on libigl python folder. 
-*Note:* If you use docker-machine you need to modify the script. The required line is commendted.
+__Note:__ If you use __docker-machine__ you need to modify `./run_tutorials.sh` to use the commented line instead. Most recent installations of docker don't need docker-machine.
 
+Running `./run_tutorials.sh` will start the image on libigl python folder. 
 From there run the following to test the first tutorial (no ui)
 ```
 PYTHONPATH=. python tutorials/001_BasicTypes.py
